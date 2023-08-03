@@ -1,4 +1,3 @@
-import { IRegister } from "@/app/mainpage/page";
 import {
   Container,
   MainContainer,
@@ -7,6 +6,13 @@ import {
   TitleContainer,
   TextValue,
 } from "./styles";
+
+interface IRegister {
+  name: string;
+  age: number;
+  birthDate: Date;
+  email: string;
+}
 
 const TesteComponent = ({ name, age, birthDate, email }: IRegister) => {
   return (

@@ -1,30 +1,14 @@
 "use client";
-import TesteComponent from "@/components/TesteComponent";
-
-export interface IRegister {
-  name: string;
-  age: number;
-  birthDate?: Date;
-  email: string;
-}
-
-export const register: IRegister = {
-  name: "John Corno",
-  age: 20,
-  birthDate: new Date(1666, 2, 31),
-  email: "JohnCorno20years@gmail.com",
-};
+import SimpleAnchorCard from "@/components/SimpleAnchorCard/page";
 
 export default function MainPage() {
   return (
     <>
-      <TesteComponent
-        name={register.name}
-        age={register.age}
-        birthDate={register.birthDate}
-        email={register.email}
-      ></TesteComponent>
-      ;
+      <SimpleAnchorCard
+        title="Zezin"
+        subtitle="O corno"
+        image="https://media.sketchfab.com/models/243f544627214afeb17535ce53ca75fa/thumbnails/220b50db33464ae5aa902a30704bb92f/1024x576.jpeg"
+      ></SimpleAnchorCard>
     </>
   );
 }
