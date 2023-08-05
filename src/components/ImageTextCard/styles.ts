@@ -12,12 +12,17 @@ export const Container = styled.div`
   margin: 1em;
   gap: 1vw;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 464px) {
+    width: 80%;
+    height: 100%;
+  }
 `;
 
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
   height: 100%;
   align-items: center;
 `;
@@ -52,8 +57,8 @@ export const Subtitle = styled.div`
 
 export const ImageContainer = styled.div`
   min-height: 30px;
-  min-width: 30px;
-  width: 8vw;
+  min-width: 70px;
+  width: 6vw;
   height: 8vh;
 `;
 
