@@ -59,7 +59,7 @@ export const ImageContainer = styled.div`
   min-height: 30px;
   min-width: 70px;
   width: 6vw;
-  height: 8vh;
+  height: 10vh;
 `;
 
 export const Image = styled.img`
