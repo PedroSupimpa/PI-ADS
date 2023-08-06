@@ -10,12 +10,12 @@ export const Container = styled.div`
   align-items: center;
   padding: 1em;
   margin: 1em;
-
+  margin-top: 2vh;
+  gap: 1vw;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 
   @media (max-width: 464px) {
     width: 80%;
-    gap: 2vw;
     height: 50%;
   }
 `;
