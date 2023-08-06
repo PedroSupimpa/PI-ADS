@@ -10,12 +10,13 @@ export const Container = styled.div`
   align-items: center;
   padding: 1em;
   margin: 1em;
+  margin-top: 2vh;
   gap: 1vw;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 
   @media (max-width: 464px) {
     width: 80%;
-    height: 100%;
+    height: 50%;
   }
 `;
 
@@ -37,9 +38,8 @@ export const Title = styled.div`
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  white-space: nowrap; /* Prevent title from wrapping to a new line */
-  text-overflow: ellipsis; /* Add ellipsis (...) when text overflows */
-  overflow: hidden; /* Hide any overflowing text beyond the container */
+  white-space: nowrap;
+  overflow: hidden;
 `;
 
 export const Subtitle = styled.div`
@@ -50,9 +50,8 @@ export const Subtitle = styled.div`
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  white-space: nowrap; /* Prevent title from wrapping to a new line */
-  text-overflow: ellipsis; /* Add ellipsis (...) when text overflows */
-  overflow: hidden; /* Hide any overflowing text beyond the container */
+  white-space: nowrap;
+  overflow: hidden;
 `;
 
 export const ImageContainer = styled.div`
