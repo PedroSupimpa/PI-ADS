@@ -4,10 +4,12 @@ import ImageTextCard from "@/components/ImageTextCard/page";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { responsive } from "./styles";
+import Nav from "@/components/nav/page";
 
 export default function MainPage() {
   return (
     <>
+      <Nav />
       <Carousel responsive={responsive}>
         <ImageTextCard
           title="Zezin, o corno"
