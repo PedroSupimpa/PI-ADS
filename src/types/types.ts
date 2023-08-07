@@ -3,3 +3,7 @@ export interface IImageTextCard {
   subtitle: string;
   image: string;
 }
+
+export interface ILocationModal {
+  locationValue: string;
+}

@@ -26,6 +26,7 @@ export const TextContainer = styled.div`
   width: 50%;
   height: 100%;
   align-items: center;
+  margin-left: 1vw;
 `;
 
 export const Title = styled.div`
@@ -56,7 +57,7 @@ export const Subtitle = styled.div`
 
 export const ImageContainer = styled.div`
   min-height: 30px;
-  min-width: 70px;
+  min-width: 90px;
   width: 6vw;
   height: 10vh;
 `;

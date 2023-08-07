@@ -5,7 +5,7 @@ import React from "react";
 interface ISearchBar {
   placeholder: string;
 }
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
 const SearchBar: React.FC<ISearchBar> = ({ placeholder }) => {
   return (
     <SearchBarContainer>
