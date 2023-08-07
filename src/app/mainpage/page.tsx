@@ -1,10 +1,10 @@
 "use client";
 
-import ImageTextCard from "@/components/ImageTextCard/page";
+import ImageTextCard from "@/components/ImageTextCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { responsive } from "./styles";
-import Nav from "@/components/nav/page";
+import Nav from "@/components/nav";
 
 export default function MainPage() {
   return (
