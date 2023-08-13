@@ -1,3 +1,4 @@
+"use client";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
@@ -11,35 +12,44 @@ import {
   SeachContainer,
 } from "./style";
 import LocationModal from "../LocationModal";
+import { useState } from "react";
+import SideBar from "@/components/SideBar";
+import Link from "next/link";
 
 const Nav = () => {
+  const [showSideBar, setShowSideBar] = useState(false);
+
+  const handleSideBar = () => setShowSideBar(!showSideBar);
+
   return (
-    <nav>
-      <NavContainer>
-        <IconContainer>
-          <MenuIcon style={{ color: "#232323" }} />
-        </IconContainer>
-        <div style={{ color: "#232323" }}>Home</div>
+    <NavContainer>
+      <IconContainer>
+        <MenuIcon style={{ color: "#232323" }} onClick={handleSideBar} />
+      </IconContainer>
+      <div style={{ color: "#232323" }}>Home</div>
 
-        <SeachContainer>
-          <SearchBar placeholder="Search ..." />
-        </SeachContainer>
+      <SeachContainer>
+        <SearchBar placeholder="Search ..." />
+      </SeachContainer>
 
-        <LocationContainer>
-          <LocationModal locationValue="Taguatinga" />
-        </LocationContainer>
+      <LocationContainer>
+        <LocationModal locationValue="Taguatinga" />
+      </LocationContainer>
 
-        <RightSideIcons>
+      <RightSideIcons>
+        <Link href="/login">
           <IconContainer>
             <AccountCircleIcon style={{ color: "#232323" }} />
           </IconContainer>
+        </Link>
 
-          <IconContainer>
-            <ShoppingCartIcon style={{ color: "#232323" }} />
-          </IconContainer>
-        </RightSideIcons>
-      </NavContainer>
-    </nav>
+        <IconContainer>
+          <ShoppingCartIcon style={{ color: "#232323" }} />
+        </IconContainer>
+      </RightSideIcons>
+
+      {showSideBar && <SideBar active={setShowSideBar} />}
+    </NavContainer>
   );
 };
 
