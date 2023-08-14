@@ -20,6 +20,7 @@ export const IconContainer = styled.div`
 
 export const LocationModalContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 30vw;
