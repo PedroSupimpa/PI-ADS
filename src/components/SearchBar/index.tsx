@@ -6,7 +6,7 @@ interface ISearchBar {
   placeholder: string;
 }
 
-const SearchBar: React.FC<ISearchBar> = ({ placeholder }) => {
+const SearchBar = ({ placeholder }:ISearchBar) => {
   return (
     <SearchBarContainer>
       <input
