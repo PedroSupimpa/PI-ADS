@@ -10,10 +10,10 @@ export const SideBarContainer = styled.div`
   top: 0px;
   left: 0px;
   height: 100%;
-  width: 20vw;
+  width: 17vw;
   left: ${(props) => (props ? "0" : "-100%")};
   animation: handleSideBar 0.4s;
-  z-index: 10000;
+  z-index: 1000;
 
   @keyframes handleSideBar {
     from {
@@ -22,7 +22,7 @@ export const SideBarContainer = styled.div`
     }
     to {
       opacity: 1;
-      width: 20vw;
+      width: 17vw;
     }
   }
   @media (max-width: 400px) {
