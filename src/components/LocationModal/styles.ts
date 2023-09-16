@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const ContainerLocation = styled.div``;
+export const ContainerLocation = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
 
 export const LocationValue = styled.div`
   @media (max-width: 464px) {
@@ -16,9 +20,9 @@ export const IconContainer = styled.div`
 
 export const LocationModalContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   width: 30vw;
   height: 50vh;
   background-color: white;
