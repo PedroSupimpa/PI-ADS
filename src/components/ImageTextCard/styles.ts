@@ -39,7 +39,6 @@ export const Title = styled.div`
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  white-space: nowrap;
   overflow: hidden;
 `;
 
@@ -49,9 +48,9 @@ export const Subtitle = styled.div`
   font-size: 0.8em;
   color: #222831;
   width: 100%;
-  height: 100%;
+  height: 80%;
   box-sizing: border-box;
-  white-space: nowrap;
+
   overflow: hidden;
 `;
 
