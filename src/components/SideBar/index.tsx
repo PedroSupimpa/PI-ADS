@@ -10,15 +10,17 @@ import {
 import CloseIcon from "@mui/icons-material/Close";
 
 interface ISideBar {
-  active: (value: boolean) => void;
+  active: boolean;
+  activeHandler: (value: boolean) => void;
 }
 
-const SideBar = ({ active }: ISideBar) => {
+const SideBar = ({ active, activeHandler }: ISideBar) => {
   const closeSideBar = () => {
-    active(false);
+    activeHandler(false);
   };
+
   return (
-    <SideBarContainer>
+    <SideBarContainer $active={active}>
       <SideBarHeader>
         <div>LOGO</div>
         <IconContainer>

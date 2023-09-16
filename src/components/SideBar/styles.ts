@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const SideBarContainer = styled.div`
+export const SideBarContainer = styled.div<{ $active: boolean }>`
   display: flex;
   flex-direction: column;
-
   position: fixed;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -11,33 +10,12 @@ export const SideBarContainer = styled.div`
   left: 0px;
   height: 100%;
   width: 17vw;
-  left: ${(props) => (props ? "0" : "-100%")};
-  animation: handleSideBar 0.4s;
+  transform: translateX(${(props) => (props.$active ? "0%" : "-100%")});
+  transition: transform ease-in-out 0.5s;
   z-index: 1000;
 
-  @keyframes handleSideBar {
-    from {
-      opacity: 0;
-      width: 0;
-    }
-    to {
-      opacity: 1;
-      width: 17vw;
-    }
-  }
   @media (max-width: 400px) {
     width: 100%;
-
-    @keyframes handleSideBar {
-      from {
-        opacity: 0;
-        width: 0;
-      }
-      to {
-        opacity: 1;
-        width: 100%;
-      }
-    }
   }
 `;
 
