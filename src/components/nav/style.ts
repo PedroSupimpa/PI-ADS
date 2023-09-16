@@ -7,6 +7,7 @@ export const NavContainer = styled.div`
   height: 6vh;
   background: white;
   border-bottom: 1px solid #f2f2f2;
+  z-index: 10001;
 `;
 
 export const SeachContainer = styled.div`
