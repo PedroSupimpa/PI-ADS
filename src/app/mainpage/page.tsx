@@ -3,13 +3,31 @@
 import ImageTextCard from "@/components/ImageTextCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { responsive } from "./styles";
+import {
+  VoucherCarouselContainer,
+  responsive,
+  voucherCarousel,
+} from "./styles";
 import Nav from "@/components/nav";
+import VoucherImageAnchor from "@/components/VoucherImageAnchor";
 
+import voucherTest1 from "@/imgTest/voucherTest1.png";
+import voucherTest2 from "@/imgTest/voucherTest2.png";
+import voucherTest3 from "@/imgTest/voucherTest3.png";
 export default function MainPage() {
   return (
     <>
       <Nav />
+
+      <VoucherCarouselContainer>
+        <Carousel responsive={voucherCarousel}>
+          <VoucherImageAnchor voucherImage={voucherTest3}></VoucherImageAnchor>
+          <VoucherImageAnchor voucherImage="https://media.sketchfab.com/models/243f544627214afeb17535ce53ca75fa/thumbnails/220b50db33464ae5aa902a30704bb92f/1024x576.jpeg"></VoucherImageAnchor>
+          <VoucherImageAnchor voucherImage={voucherTest2}></VoucherImageAnchor>
+
+          <VoucherImageAnchor voucherImage={voucherTest1}></VoucherImageAnchor>
+        </Carousel>
+      </VoucherCarouselContainer>
       <Carousel responsive={responsive}>
         <ImageTextCard
           title="Zezin, o corno"

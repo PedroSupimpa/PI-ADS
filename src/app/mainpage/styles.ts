@@ -59,10 +59,33 @@ export const Text = styled.div`
   padding: 0.2vh;
 `;
 
+export const VoucherCarouselContainer = styled.div`
+  width: 100%;
+`;
+
 export const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
     items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+  },
+  tablet: {
+    breakpoint: { max: 1300, min: 464 },
+    items: 4,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+
+export const voucherCarousel = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 4,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
