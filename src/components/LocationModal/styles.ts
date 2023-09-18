@@ -36,7 +36,7 @@ export const LocationModalContainer = styled.div`
   transform: translate(-50%, -50%);
   border-radius: 0.5em;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-
+  z-index: 1000;
   @media (max-width: 464px) {
     width: 85%;
   }
