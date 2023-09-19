@@ -59,6 +59,19 @@ export const Text = styled.div`
   padding: 0.2vh;
 `;
 
+export const Aling = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const PageContent = styled.div`
+  width: 90vw;
+  min-height: 110vh;
+  margin-top: 5vh;
+`;
+
 export const VoucherCarouselContainer = styled.div`
   width: 100%;
 `;
