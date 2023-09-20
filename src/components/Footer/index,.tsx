@@ -14,7 +14,7 @@ const Footer = () => {
         <FooterBottom>
           <BrandLogo />
           <CopyrigthText>
-            {`© Copyright 2023 - All Ondemand - Todos os direitos reservados All Ondemand com Agência de Restaurantes Online S.A.
+            {`© Copyright 2023 - All On-Demand - Todos os direitos reservados All On-Demand com Agência de Restaurantes Online S.A.
 
 CNPJ 00.000.000/0000-00 /  Taguatinga, Brasilia/DF - CEP 00.000-000`}
           </CopyrigthText>
