@@ -1,7 +1,9 @@
+import { StaticImageData } from "next/image";
+
 export interface IImageTextCard {
   title: string;
   subtitle: string;
-  image: string;
+  image: string | StaticImageData;
 }
 
 export interface ILocationModal {
