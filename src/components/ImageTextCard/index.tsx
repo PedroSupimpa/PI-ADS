@@ -9,10 +9,11 @@ import {
 } from "./styles";
 
 const ImageTextCard = ({ title, subtitle, image }: IImageTextCard) => {
+  const imageSrc = typeof image === "string" ? image : image.src;
   return (
     <Container>
       <ImageContainer>
-        <Image src={image} />
+        <Image src={imageSrc} />
       </ImageContainer>
       <TextContainer>
         <Title>{title}</Title>

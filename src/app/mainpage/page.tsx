@@ -13,9 +13,16 @@ import {
 import Nav from "@/components/nav";
 import VoucherImageAnchor from "@/components/VoucherImageAnchor";
 
-import voucherTest1 from "@/imgTest/voucherTest1.png";
-import voucherTest2 from "@/imgTest/voucherTest2.png";
-import voucherTest3 from "@/imgTest/voucherTest3.png";
+import voucherTest7 from "@/imgTest/voucherTest7.png";
+import voucherTest4 from "@/imgTest/voucherTest4.png";
+import voucherTest5 from "@/imgTest/voucherTest5.png";
+import voucherTest6 from "@/imgTest/voucherTest6.png";
+import voucherTest8 from "@/imgTest/voucherTest8.png";
+import extra_img from "@/imgTest/extra_img.jpg";
+import drogasil_img from "@/imgTest/drogasil_img.webp";
+import kalunga_img from "@/imgTest/kalunga_img.webp";
+import oba_img from "@/imgTest/oba_img.png";
+
 import Footer from "@/components/Footer/index,";
 
 export default function MainPage() {
@@ -27,40 +34,45 @@ export default function MainPage() {
           <VoucherCarouselContainer>
             <Carousel responsive={voucherCarousel}>
               <VoucherImageAnchor
-                voucherImage={voucherTest3}
-              ></VoucherImageAnchor>
-              <VoucherImageAnchor voucherImage="https://media.sketchfab.com/models/243f544627214afeb17535ce53ca75fa/thumbnails/220b50db33464ae5aa902a30704bb92f/1024x576.jpeg"></VoucherImageAnchor>
-              <VoucherImageAnchor
-                voucherImage={voucherTest2}
+                voucherImage={voucherTest7}
               ></VoucherImageAnchor>
               <VoucherImageAnchor
-                voucherImage={voucherTest1}
+                voucherImage={voucherTest8}
+              ></VoucherImageAnchor>
+              <VoucherImageAnchor
+                voucherImage={voucherTest4}
+              ></VoucherImageAnchor>
+              <VoucherImageAnchor
+                voucherImage={voucherTest5}
+              ></VoucherImageAnchor>
+              <VoucherImageAnchor
+                voucherImage={voucherTest6}
               ></VoucherImageAnchor>
             </Carousel>
           </VoucherCarouselContainer>
           <Carousel responsive={responsive}>
             <ImageTextCard
-              title="Zezin, o corno"
-              subtitle="o maior corno do mundo"
-              image="https://media.sketchfab.com/models/243f544627214afeb17535ce53ca75fa/thumbnails/220b50db33464ae5aa902a30704bb92f/1024x576.jpeg"
+              title="Extra"
+              subtitle="30 min"
+              image={extra_img}
             ></ImageTextCard>
 
             <ImageTextCard
-              title="Jukinha, o corno"
-              subtitle="o maior corno do mundo"
-              image="https://media.sketchfab.com/models/243f544627214afeb17535ce53ca75fa/thumbnails/220b50db33464ae5aa902a30704bb92f/1024x576.jpeg"
+              title="Drogasil"
+              subtitle="30 min"
+              image={drogasil_img}
             ></ImageTextCard>
 
             <ImageTextCard
-              title="Jukinha, o corno"
-              subtitle="o maior corno do mundo"
-              image="https://play-lh.googleusercontent.com/TdByGSl0ydL445smYzXVKWW-7E5G_jG0MJAti9DlevS1unPdaAJmzETUZ2F7-PZSovws"
+              title="Kalunga"
+              subtitle="30 min"
+              image={kalunga_img}
             ></ImageTextCard>
 
             <ImageTextCard
-              title="Jukinha, o corno"
-              subtitle="o maior corno do mundo"
-              image="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt70e0b34417caba99/62915270285a180f5793b6c0/WR_RoseQuartzPoro_Circle_1024.jpg"
+              title="Oba Hortifruti"
+              subtitle="30 min"
+              image={oba_img}
             ></ImageTextCard>
 
             <ImageTextCard
