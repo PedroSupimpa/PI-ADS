@@ -27,11 +27,12 @@ export const RightSideIcons = styled.div`
   justify-content: end;
   width: 15vw;
 `;
+
 export const LocationContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 8vw;
+  width: 10vw;
   height: 80%;
   padding: 0.5%;
   font-size: 1em;

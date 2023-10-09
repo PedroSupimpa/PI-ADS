@@ -29,14 +29,16 @@ const Nav = () => {
       <IconContainer>
         <MenuIcon style={{ color: "#232323" }} onClick={handleSideBar} />
       </IconContainer>
-      <div style={{ color: "#232323" }}>Home</div>
+      <Link href="/mainpage">
+        <div style={{ color: "#232323" }}>Home</div>
+      </Link>
 
       <SeachContainer>
         <SearchBar placeholder="Search ..." />
       </SeachContainer>
 
       <LocationContainer>
-        <LocationModal locationValue="Taguatinga" />
+        <LocationModal locationValue="Arniqueiras - DF" />
       </LocationContainer>
 
       <RightSideIcons>
@@ -54,7 +56,7 @@ const Nav = () => {
         </IconContainer>
       </RightSideIcons>
 
-      {showSideBar && <SideBar active={setShowSideBar} />}
+      <SideBar active={showSideBar} activeHandler={setShowSideBar} />
 
       <CartComponent
         active={showCartBar}
